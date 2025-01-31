@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DIPEN REDDY PATIL</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body>
+    <!-- Header Section with Name, Contact, and Resume -->
+    <header>
+        <div class="header-left">
+            <h1>Dipen Reddy Patil</h1>
+            <p>Email: <a href="mailto:patildd@mail.uc.edu">patildd@mail.uc.edu</a></p>
+            <p>Phone: 513-399-0519</p>
+
+            <!-- Resume Button -->
+            <a href="{{ url_for('static', filename='resume.pdf') }}" target="_blank" class="resume-btn">View Resume</a>
+        </div>
+        <div class="header-right">
+            <img src="{{ url_for('static', filename='images/profile.jpg') }}" alt="Dipen Reddy Patil" class="profile-pic">
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a passionate and dedicated Python programmer with a strong foundation in data analysis, web development, and AI-powered applications.
+                Having recently completed my Master’s in Computer Science from the University of Cincinnati, I am eager to apply my skills to real-world projects.
+                Currently, I am exploring AI, automation, and data-driven insights to develop solutions that make a difference. I am actively seeking opportunities
+                to contribute my skills in innovative projects while growing as a developer.</p>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+            <ul>
+                <li>📝 AI Resume Analyzer - NLP-powered tool to analyze resumes</li>
+                <li>🤖 Job Scraper Automation - Automated script to find job listings</li>
+                <li>💰 Personal Finance Tracker - Helps track expenses and savings</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>If you would like to reach out to me, feel free to email me at <a href="mailto:patildd@mail.uc.edu">patildd@mail.uc.edu</a></p>
+
+            <!-- Social Links -->
+            <div class="social-links">
+                <a href="https://github.com/jred34" target="_blank" class="github">GitHub</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span> Dipen Reddy Patil. All Rights Reserved.</p>
+    </footer>
+
+    <!-- JavaScript to dynamically set the current year -->
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

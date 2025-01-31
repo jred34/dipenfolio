@@ -1,0 +1,153 @@
+/* Reset Default Margins and Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* General Body Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #d2b48c, #e0c8a0);
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: url('/static/images/tech-bg.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    border-radius: 12px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    min-height: 250px;
+}
+
+/* Left Side (Name & Email) */
+.header-left h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.header-left p {
+    font-size: 1.2em;
+    margin-top: 5px;
+}
+
+.header-left a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.header-left a:hover {
+    color: #ffd700; /* Gold hover effect */
+}
+
+/* Right Side (Profile Picture) */
+.header-right img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid white;
+    object-fit: cover;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.header-right img:hover {
+    transform: scale(1.08);
+}
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #8b4513;
+    color: white;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.resume-btn:hover {
+    background: #5a2d0c;
+    transform: scale(1.05);
+}
+
+/* Sections */
+section {
+    margin: 30px auto;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 80%;
+}
+
+section:hover {
+    transform: translateY(-5px);
+}
+
+/* Contact & Social Links */
+.social-links {
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.github {
+    background: #333;
+    color: white;
+}
+
+.social-links a:hover {
+    opacity: 0.8;
+}
+
+/* FOOTER */
+footer {
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 12px;
+    font-size: 1.1em;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px;
+    }
+
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+}
